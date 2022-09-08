@@ -4,7 +4,6 @@ body{
     background-color: #1b203d;
     overflow: hidden;
     font-family: system-ui;
-
 }
 .clearfix{
     clear: both;
@@ -29,7 +28,7 @@ body{
     background: #272c4a;
     overflow: hidden;
     transition: .5s;
-    padding: 30px;
+    padding-top: 30px;
 }
 .sidenav a{
     color: #818181;
@@ -113,7 +112,7 @@ body{
     font-size: 40px!important;
     float: right;
     color: #818181;
-    padding-left: 10px;
+    padding-right: 10px;
     margin-top: 35px!important;
 }
 .col-div-8{
@@ -122,9 +121,9 @@ body{
 }
 .col-div-4{
     width: 30%;
-    float: 30%;
+    float: left;
 }
-.content-box p{
+.content-box{
     padding: 20px;
 }
 .content-box p{
@@ -160,29 +159,32 @@ td,th{
     color: #ddd;
     border-bottom: 1px solid #818181;
 }
-.circule-wrap{
+tr:last-child td{
+    border-bottom: none;
+}
+.circle-wrap{
     margin: 50px auto;
     background: #e6e2e7;
     height: 150px;
     width: 150px;
     border-radius: 50%;
 }
-.circule-wrap .circule .mask,
-.circule-wrap .circule .fill{
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
     height: 150px;
     width: 150px;
     position: absolute;
     border-radius: 50%;
 }
-.circule-wrap .circule .mask{
+.circle-wrap .circle .mask{
     clip: rect(0px 150px 150px 75px);
 }
-.circule-wrap .circule .mask .fill{
+.circle-wrap .circle .mask .fill{
     clip: rect(0px 75px 150px 0px);
     background-color: #f7403b;
 }
-.circule-wrap .circule .mask .full,
-.circule-wrap .circule .fill{
+.circle-wrap .circle .mask.full,
+.circle-wrap .circle .fill{
     animation: fill ease-in-out 3s;
     transform: rotate(126deg);
 }
@@ -194,7 +196,7 @@ td,th{
         transform: rotate(126deg);
     }
 }
-.circule-wrap .inside-circule{
+.circle-wrap .inside-circle{
     width: 125px;
     height: 125px;
     border-radius: 50%;
